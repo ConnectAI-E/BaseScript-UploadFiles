@@ -1,0 +1,1 @@
+declare const t: (arg: any, arg2?: any) => any

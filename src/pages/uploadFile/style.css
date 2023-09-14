@@ -1,0 +1,81 @@
+.container {
+    height: 100vh;
+    overflow: auto;
+    padding: 8px;
+    scroll-behavior: smooth;
+}
+
+body,
+html {
+    padding: 0;
+    margin: 0;
+}
+p {
+    white-space: pre-wrap;
+}
+.tableCell {
+    max-height: 120px;
+    overflow: auto;
+}
+
+.fileUploadContainer {
+    position: relative;
+}
+
+.fileInput {
+    opacity: 0;
+    float: left;
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+}
+.fileInput input {
+    cursor: pointer;
+    width: 100%;
+    height: 80px;
+}
+
+.fileInputMask {
+    height: 80px;
+    pointer-events: none;
+    display: flex;
+    line-height: 80px;
+    gap: 10px;
+
+    justify-content: center;
+    border: 1px dashed #1890ff;
+    border-radius: 10px;
+}
+
+.fileInputMask .uploadIcon {
+    font-size: 1.5em;
+}
+
+.space-around {
+    /* display: flex; */
+    gap: 10px;
+    align-items: flex-end;
+    margin-bottom: 20px;
+}
+.space-around .ant-form-item-label {
+    padding: 0 !important;
+}
+
+.space-around .ant-form-item {
+    margin: 0 !important;
+}
+
+.btnsContainer {
+    display: flex;
+    gap: 12px;
+}
+
+.filedIconContainer {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    width: 15px;
+    margin-right: 8px;
+}
